@@ -1,15 +1,16 @@
-import { Code2, Mail, Phone, MapPin, Heart } from 'lucide-react';
+import { Sparkles, Mail, Phone, MapPin, Heart } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   const quickLinks = [
-    { name: 'Home', href: '#home' },
-    { name: 'Services', href: '#services' },
-    { name: 'Portfolio', href: '#portfolio' },
-    { name: 'Careers', href: '#careers' },
-    { name: 'Blog', href: '#blog' },
-    { name: 'Contact', href: '#contact' },
+    { name: 'Home', href: '/' },
+    { name: 'Services', href: '/services' },
+    { name: 'Portfolio', href: '/portfolio' },
+    { name: 'Careers', href: '/careers' },
+    { name: 'Blog', href: '/blog' },
+    { name: 'Contact', href: '/contact' },
   ];
 
   const services = [
@@ -22,9 +23,9 @@ const Footer = () => {
   ];
 
   const contactInfo = [
-    { icon: Mail, text: 'contact@appdost.in' },
-    { icon: Phone, text: '+91 76350 75422 / +91 11 6929 0750' },
-    { icon: MapPin, text: '3 Offices: Banka (HQ), Motihari, Patna' },
+    { icon: Mail, text: 'contact@soul.dev' },
+    { icon: Phone, text: '+91 76350 75422' },
+    { icon: MapPin, text: 'HQ: Patna, Bihar | Motihari, Banka' },
   ];
 
   return (
@@ -32,24 +33,24 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
           <div>
-            <div className="flex items-center space-x-2 mb-6">
+            <Link to="/" className="flex items-center space-x-2 mb-6">
               <div className="w-10 h-10 bg-yellow-400 rounded-lg flex items-center justify-center transform rotate-12">
-                <Code2 className="w-6 h-6 text-black -rotate-12" />
+                <Sparkles className="w-6 h-6 text-black -rotate-12" />
               </div>
               <div>
-                <h3 className="text-xl font-bold text-yellow-400">AppDost</h3>
+                <h3 className="text-xl font-bold text-yellow-400">Soul</h3>
                 <p className="text-xs text-yellow-500/80 uppercase tracking-wide">
                   Complete IT Solution
                 </p>
               </div>
-            </div>
+            </Link>
             <p className="text-gray-400 mb-6 leading-relaxed">
               Delivering innovative IT solutions since 2025. We transform ideas into powerful digital experiences with cutting-edge technology and expert craftsmanship.
             </p>
             <div className="text-sm text-gray-400 space-y-1">
-              <p className="font-semibold text-yellow-400">10+ Web Projects</p>
-              <p className="font-semibold text-yellow-400">4+ Android Apps</p>
-              <p className="font-semibold text-yellow-400">1 CRM System</p>
+              <p className="font-semibold text-yellow-400">150+ Projects Completed</p>
+              <p className="font-semibold text-yellow-400">50+ Team Members</p>
+              <p className="font-semibold text-yellow-400">15+ Countries Served</p>
             </div>
             <div className="flex space-x-3 mt-6">
               <div className="w-10 h-10 bg-zinc-900 border border-yellow-400/30 hover:bg-yellow-400 hover:border-yellow-400 rounded-lg flex items-center justify-center cursor-pointer transition-all duration-300 group">
@@ -72,13 +73,13 @@ const Footer = () => {
             <ul className="space-y-3">
               {quickLinks.map((link, index) => (
                 <li key={index}>
-                  <a
-                    href={link.href}
+                  <Link
+                    to={link.href}
                     className="text-gray-400 hover:text-yellow-400 transition-colors duration-300 flex items-center group"
                   >
                     <span className="w-0 h-0.5 bg-yellow-400 group-hover:w-4 transition-all duration-300 mr-0 group-hover:mr-2"></span>
                     {link.name}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -89,13 +90,13 @@ const Footer = () => {
             <ul className="space-y-3">
               {services.map((service, index) => (
                 <li key={index}>
-                  <a
-                    href="#services"
+                  <Link
+                    to="/services"
                     className="text-gray-400 hover:text-yellow-400 transition-colors duration-300 flex items-center group"
                   >
                     <span className="w-0 h-0.5 bg-yellow-400 group-hover:w-4 transition-all duration-300 mr-0 group-hover:mr-2"></span>
                     {service}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -127,7 +128,7 @@ const Footer = () => {
               <a href="#" className="hover:text-yellow-400 transition-colors">Sitemap</a>
             </div>
             <div className="flex items-center space-x-1 text-sm text-gray-400">
-              <span>© {currentYear} AppDost - Complete IT Solution. All rights reserved.</span>
+              <span>© {currentYear} Soul - Complete IT Solution. All rights reserved.</span>
             </div>
           </div>
           <div className="text-center mt-6">
@@ -136,7 +137,7 @@ const Footer = () => {
               <Heart className="w-4 h-4 text-yellow-400 fill-current" />
               <span>in India</span>
             </p>
-            <p className="text-xs text-gray-600 mt-2">www.appdost.in</p>
+            <p className="text-xs text-gray-600 mt-2">www.soul.dev</p>
           </div>
         </div>
       </div>

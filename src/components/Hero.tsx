@@ -13,7 +13,7 @@ const Hero = () => {
             <div className="inline-flex items-center space-x-2 bg-yellow-400/10 border border-yellow-400/30 rounded-full px-4 py-2 backdrop-blur-sm">
               <Zap className="w-4 h-4 text-yellow-400" />
               <span className="text-sm font-medium text-yellow-400">
-                Complete IT Solution Provider Since 2025
+                Complete IT Solution Provider
               </span>
             </div>
 
