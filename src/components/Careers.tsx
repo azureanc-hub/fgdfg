@@ -60,19 +60,19 @@ const Careers = () => {
   };
 
   return (
-    <section id="careers" className="py-24 bg-white">
+    <section id="careers" className="py-24 bg-black">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+          <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
             Join Our Team
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Be part of our journey. Work on exciting projects and shape the future of IT.
+          <p className="text-xl text-gray-400 max-w-3xl mx-auto">
+            Be part of our journey. Work on exciting projects and shape the future of IT with AppDost.
           </p>
         </div>
 
         <div className="mb-20">
-          <h3 className="text-3xl font-bold text-gray-900 mb-10 text-center">
+          <h3 className="text-3xl font-bold text-white mb-10 text-center">
             Why Work With Us?
           </h3>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -81,15 +81,15 @@ const Careers = () => {
               return (
                 <div
                   key={index}
-                  className="bg-gradient-to-br from-slate-50 to-blue-50 rounded-2xl p-8 hover:shadow-xl transition-all duration-300 hover:-translate-y-2"
+                  className="bg-zinc-900 border border-yellow-400/20 rounded-2xl p-8 hover:border-yellow-400 hover:shadow-xl hover:shadow-yellow-400/20 transition-all duration-300 hover:-translate-y-2"
                 >
-                  <div className={`w-14 h-14 bg-gradient-to-br ${benefit.gradient} rounded-xl flex items-center justify-center mb-6`}>
-                    <Icon className="w-7 h-7 text-white" />
+                  <div className="w-14 h-14 bg-yellow-400 rounded-xl flex items-center justify-center mb-6">
+                    <Icon className="w-7 h-7 text-black" />
                   </div>
-                  <h4 className="text-xl font-bold text-gray-900 mb-3">
+                  <h4 className="text-xl font-bold text-white mb-3">
                     {benefit.title}
                   </h4>
-                  <p className="text-gray-600 leading-relaxed">
+                  <p className="text-gray-400 leading-relaxed">
                     {benefit.description}
                   </p>
                 </div>
@@ -98,30 +98,30 @@ const Careers = () => {
           </div>
         </div>
 
-        <div className="bg-gradient-to-br from-blue-600 to-cyan-500 rounded-3xl p-12 mb-20 text-center text-white">
-          <h3 className="text-3xl font-bold mb-4">No Current Openings</h3>
-          <p className="text-blue-100 max-w-2xl mx-auto mb-6">
+        <div className="bg-yellow-400 rounded-3xl p-12 mb-20 text-center">
+          <h3 className="text-3xl font-bold mb-4 text-black">No Current Openings</h3>
+          <p className="text-black/80 max-w-2xl mx-auto mb-6">
             We don't have any open positions at the moment, but we're always looking for talented people.
             Feel free to submit your resume and we'll reach out when a suitable position opens up.
           </p>
-          <button className="bg-white text-blue-600 px-8 py-3 rounded-lg font-medium hover:shadow-xl transition-all duration-300 hover:scale-105">
+          <button className="bg-black text-yellow-400 px-8 py-3 rounded-lg font-medium hover:shadow-xl hover:shadow-black/50 transition-all duration-300 hover:scale-105">
             Submit Your Resume
           </button>
         </div>
 
         <div className="max-w-3xl mx-auto">
-          <div className="bg-gradient-to-br from-slate-50 to-blue-50 rounded-3xl p-8 md:p-12">
-            <h3 className="text-3xl font-bold text-gray-900 mb-2 text-center">
+          <div className="bg-zinc-900 border border-yellow-400/30 rounded-3xl p-8 md:p-12">
+            <h3 className="text-3xl font-bold text-white mb-2 text-center">
               Submit Your Resume
             </h3>
-            <p className="text-gray-600 text-center mb-8">
+            <p className="text-gray-400 text-center mb-8">
               We'd love to hear from you! Fill in your details and we'll get back to you soon.
             </p>
 
             <form onSubmit={handleSubmit} className="space-y-6">
               <div className="grid md:grid-cols-2 gap-6">
                 <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-2">
+                  <label className="block text-sm font-medium text-gray-300 mb-2">
                     Full Name *
                   </label>
                   <input
@@ -130,12 +130,12 @@ const Careers = () => {
                     value={formData.fullName}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-3 rounded-lg border-2 border-gray-200 focus:border-blue-500 focus:outline-none transition-colors"
+                    className="w-full px-4 py-3 rounded-lg bg-black border-2 border-yellow-400/30 text-white focus:border-yellow-400 focus:outline-none transition-colors placeholder:text-gray-600"
                     placeholder="John Doe"
                   />
                 </div>
                 <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-2">
+                  <label className="block text-sm font-medium text-gray-300 mb-2">
                     Email *
                   </label>
                   <input
@@ -144,7 +144,7 @@ const Careers = () => {
                     value={formData.email}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-3 rounded-lg border-2 border-gray-200 focus:border-blue-500 focus:outline-none transition-colors"
+                    className="w-full px-4 py-3 rounded-lg bg-black border-2 border-yellow-400/30 text-white focus:border-yellow-400 focus:outline-none transition-colors placeholder:text-gray-600"
                     placeholder="john@example.com"
                   />
                 </div>
@@ -152,7 +152,7 @@ const Careers = () => {
 
               <div className="grid md:grid-cols-2 gap-6">
                 <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-2">
+                  <label className="block text-sm font-medium text-gray-300 mb-2">
                     Phone *
                   </label>
                   <input
@@ -161,12 +161,12 @@ const Careers = () => {
                     value={formData.phone}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-3 rounded-lg border-2 border-gray-200 focus:border-blue-500 focus:outline-none transition-colors"
+                    className="w-full px-4 py-3 rounded-lg bg-black border-2 border-yellow-400/30 text-white focus:border-yellow-400 focus:outline-none transition-colors placeholder:text-gray-600"
                     placeholder="+1 234 567 890"
                   />
                 </div>
                 <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-2">
+                  <label className="block text-sm font-medium text-gray-300 mb-2">
                     Years of Experience *
                   </label>
                   <select
@@ -174,7 +174,7 @@ const Careers = () => {
                     value={formData.experience}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-3 rounded-lg border-2 border-gray-200 focus:border-blue-500 focus:outline-none transition-colors"
+                    className="w-full px-4 py-3 rounded-lg bg-black border-2 border-yellow-400/30 text-white focus:border-yellow-400 focus:outline-none transition-colors placeholder:text-gray-600"
                   >
                     <option value="">Select experience</option>
                     <option value="0-1">0-1 years</option>
@@ -217,7 +217,7 @@ const Careers = () => {
 
               <button
                 type="submit"
-                className="w-full bg-gradient-to-r from-blue-600 to-cyan-500 text-white py-4 rounded-lg font-medium hover:shadow-xl transition-all duration-300 hover:scale-105"
+                className="w-full bg-yellow-400 text-black py-4 rounded-lg font-medium hover:shadow-xl hover:shadow-yellow-400/50 transition-all duration-300 hover:scale-105"
               >
                 Submit Application
               </button>

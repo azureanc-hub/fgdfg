@@ -80,14 +80,14 @@ const Services = () => {
   ];
 
   return (
-    <section id="services" className="py-24 bg-white">
+    <section id="services" className="py-24 bg-zinc-950">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+          <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
             Our Services
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Comprehensive IT solutions tailored to your business needs
+          <p className="text-xl text-gray-400 max-w-3xl mx-auto">
+            We deliver end-to-end IT solutions that drive business growth and digital transformation
           </p>
         </div>
 
@@ -97,21 +97,21 @@ const Services = () => {
             return (
               <div
                 key={index}
-                className="group bg-white border-2 border-gray-100 rounded-2xl p-8 hover:border-transparent hover:shadow-2xl transition-all duration-300 hover:-translate-y-2"
+                className="group bg-zinc-900 border-2 border-yellow-400/20 rounded-2xl p-8 hover:border-yellow-400 hover:shadow-2xl hover:shadow-yellow-400/20 transition-all duration-300 hover:-translate-y-2"
               >
-                <div className={`w-14 h-14 bg-gradient-to-br ${service.gradient} rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300`}>
-                  <Icon className="w-7 h-7 text-white" />
+                <div className="w-14 h-14 bg-yellow-400 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                  <Icon className="w-7 h-7 text-black" />
                 </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-3">
+                <h3 className="text-xl font-bold text-white mb-3">
                   {service.title}
                 </h3>
-                <p className="text-gray-600 mb-4 leading-relaxed">
+                <p className="text-gray-400 mb-4 leading-relaxed">
                   {service.description}
                 </p>
                 <ul className="space-y-2">
                   {service.features.map((feature, idx) => (
-                    <li key={idx} className="flex items-center text-sm text-gray-700">
-                      <div className="w-1.5 h-1.5 bg-gradient-to-br from-blue-500 to-cyan-400 rounded-full mr-2"></div>
+                    <li key={idx} className="flex items-center text-sm text-gray-300">
+                      <div className="w-1.5 h-1.5 bg-yellow-400 rounded-full mr-2"></div>
                       {feature}
                     </li>
                   ))}
@@ -121,13 +121,13 @@ const Services = () => {
           })}
         </div>
 
-        <div className="bg-gradient-to-br from-slate-50 to-blue-50 rounded-3xl p-12">
+        <div className="bg-black border-2 border-yellow-400/30 rounded-3xl p-12">
           <div className="text-center mb-12">
-            <h3 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            <h3 className="text-3xl md:text-4xl font-bold text-white mb-4">
               Our Development Process
             </h3>
-            <p className="text-gray-600 max-w-2xl mx-auto">
-              A systematic approach ensuring quality and timely delivery
+            <p className="text-gray-400 max-w-2xl mx-auto">
+              A proven methodology that ensures quality, efficiency, and client satisfaction
             </p>
           </div>
 
@@ -135,15 +135,15 @@ const Services = () => {
             {process.map((step, index) => (
               <div
                 key={index}
-                className="bg-white rounded-xl p-6 hover:shadow-lg transition-shadow duration-300"
+                className="bg-zinc-900 border border-yellow-400/20 rounded-xl p-6 hover:border-yellow-400 hover:shadow-lg hover:shadow-yellow-400/20 transition-all duration-300"
               >
-                <div className="text-5xl font-bold text-transparent bg-gradient-to-br from-blue-600 to-cyan-500 bg-clip-text mb-3">
+                <div className="text-5xl font-bold text-yellow-400 mb-3">
                   {step.number}
                 </div>
-                <h4 className="text-xl font-bold text-gray-900 mb-2">
+                <h4 className="text-xl font-bold text-white mb-2">
                   {step.title}
                 </h4>
-                <p className="text-gray-600 text-sm leading-relaxed">
+                <p className="text-gray-400 text-sm leading-relaxed">
                   {step.description}
                 </p>
               </div>
@@ -152,15 +152,15 @@ const Services = () => {
         </div>
 
         <div className="mt-16 text-center">
-          <div className="inline-flex flex-col items-center bg-gradient-to-br from-blue-600 to-cyan-500 rounded-2xl p-12 text-white">
-            <h3 className="text-2xl md:text-3xl font-bold mb-4">
-              Let's Build Something Amazing Together
+          <div className="inline-flex flex-col items-center bg-yellow-400 rounded-2xl p-12">
+            <h3 className="text-2xl md:text-3xl font-bold mb-4 text-black">
+              Ready to Start Your Project?
             </h3>
-            <p className="text-blue-100 mb-6 max-w-xl">
-              Ready to bring your ideas to life? Get in touch and let's discuss your project.
+            <p className="text-black/80 mb-6 max-w-xl">
+              Let's discuss how we can help transform your ideas into reality with cutting-edge technology and expert development.
             </p>
-            <button className="bg-white text-blue-600 px-8 py-3 rounded-lg font-medium hover:shadow-xl transition-all duration-300 hover:scale-105">
-              Start Your Project
+            <button className="bg-black text-yellow-400 px-8 py-3 rounded-lg font-medium hover:shadow-xl hover:shadow-black/50 transition-all duration-300 hover:scale-105">
+              Get Free Consultation
             </button>
           </div>
         </div>

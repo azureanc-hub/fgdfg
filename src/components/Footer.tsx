@@ -22,42 +22,47 @@ const Footer = () => {
   ];
 
   const contactInfo = [
-    { icon: Mail, text: 'contact@techforge.com' },
-    { icon: Phone, text: '+1 (555) 123-4567' },
-    { icon: MapPin, text: 'San Francisco, CA 94105' },
+    { icon: Mail, text: 'contact@appdost.in' },
+    { icon: Phone, text: '+91 76350 75422 / +91 11 6929 0750' },
+    { icon: MapPin, text: '3 Offices: Banka (HQ), Motihari, Patna' },
   ];
 
   return (
-    <footer className="bg-gradient-to-br from-gray-900 to-gray-800 text-white pt-16 pb-8">
+    <footer className="bg-black border-t border-yellow-400/20 text-white pt-16 pb-8">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
           <div>
             <div className="flex items-center space-x-2 mb-6">
-              <div className="w-10 h-10 bg-gradient-to-br from-blue-600 to-cyan-500 rounded-lg flex items-center justify-center transform rotate-12">
-                <Code2 className="w-6 h-6 text-white -rotate-12" />
+              <div className="w-10 h-10 bg-yellow-400 rounded-lg flex items-center justify-center transform rotate-12">
+                <Code2 className="w-6 h-6 text-black -rotate-12" />
               </div>
               <div>
-                <h3 className="text-xl font-bold">TechForge</h3>
-                <p className="text-xs text-gray-400 uppercase tracking-wide">
+                <h3 className="text-xl font-bold text-yellow-400">AppDost</h3>
+                <p className="text-xs text-yellow-500/80 uppercase tracking-wide">
                   Complete IT Solution
                 </p>
               </div>
             </div>
             <p className="text-gray-400 mb-6 leading-relaxed">
-              Delivering innovative IT solutions since 2025. We transform ideas into powerful digital experiences with cutting-edge technology and expert development.
+              Delivering innovative IT solutions since 2025. We transform ideas into powerful digital experiences with cutting-edge technology and expert craftsmanship.
             </p>
-            <div className="flex space-x-3">
-              <div className="w-10 h-10 bg-gray-800 hover:bg-gradient-to-br hover:from-blue-600 hover:to-cyan-500 rounded-lg flex items-center justify-center cursor-pointer transition-all duration-300">
-                <span className="text-sm font-bold">in</span>
+            <div className="text-sm text-gray-400 space-y-1">
+              <p className="font-semibold text-yellow-400">10+ Web Projects</p>
+              <p className="font-semibold text-yellow-400">4+ Android Apps</p>
+              <p className="font-semibold text-yellow-400">1 CRM System</p>
+            </div>
+            <div className="flex space-x-3 mt-6">
+              <div className="w-10 h-10 bg-zinc-900 border border-yellow-400/30 hover:bg-yellow-400 hover:border-yellow-400 rounded-lg flex items-center justify-center cursor-pointer transition-all duration-300 group">
+                <span className="text-sm font-bold text-yellow-400 group-hover:text-black">in</span>
               </div>
-              <div className="w-10 h-10 bg-gray-800 hover:bg-gradient-to-br hover:from-blue-600 hover:to-cyan-500 rounded-lg flex items-center justify-center cursor-pointer transition-all duration-300">
-                <span className="text-sm font-bold">𝕏</span>
+              <div className="w-10 h-10 bg-zinc-900 border border-yellow-400/30 hover:bg-yellow-400 hover:border-yellow-400 rounded-lg flex items-center justify-center cursor-pointer transition-all duration-300 group">
+                <span className="text-sm font-bold text-yellow-400 group-hover:text-black">𝕏</span>
               </div>
-              <div className="w-10 h-10 bg-gray-800 hover:bg-gradient-to-br hover:from-blue-600 hover:to-cyan-500 rounded-lg flex items-center justify-center cursor-pointer transition-all duration-300">
-                <span className="text-sm font-bold">f</span>
+              <div className="w-10 h-10 bg-zinc-900 border border-yellow-400/30 hover:bg-yellow-400 hover:border-yellow-400 rounded-lg flex items-center justify-center cursor-pointer transition-all duration-300 group">
+                <span className="text-sm font-bold text-yellow-400 group-hover:text-black">f</span>
               </div>
-              <div className="w-10 h-10 bg-gray-800 hover:bg-gradient-to-br hover:from-blue-600 hover:to-cyan-500 rounded-lg flex items-center justify-center cursor-pointer transition-all duration-300">
-                <span className="text-sm font-bold">ig</span>
+              <div className="w-10 h-10 bg-zinc-900 border border-yellow-400/30 hover:bg-yellow-400 hover:border-yellow-400 rounded-lg flex items-center justify-center cursor-pointer transition-all duration-300 group">
+                <span className="text-sm font-bold text-yellow-400 group-hover:text-black">ig</span>
               </div>
             </div>
           </div>
@@ -69,9 +74,9 @@ const Footer = () => {
                 <li key={index}>
                   <a
                     href={link.href}
-                    className="text-gray-400 hover:text-white transition-colors duration-300 flex items-center group"
+                    className="text-gray-400 hover:text-yellow-400 transition-colors duration-300 flex items-center group"
                   >
-                    <span className="w-0 h-0.5 bg-gradient-to-r from-blue-600 to-cyan-500 group-hover:w-4 transition-all duration-300 mr-0 group-hover:mr-2"></span>
+                    <span className="w-0 h-0.5 bg-yellow-400 group-hover:w-4 transition-all duration-300 mr-0 group-hover:mr-2"></span>
                     {link.name}
                   </a>
                 </li>
@@ -86,9 +91,9 @@ const Footer = () => {
                 <li key={index}>
                   <a
                     href="#services"
-                    className="text-gray-400 hover:text-white transition-colors duration-300 flex items-center group"
+                    className="text-gray-400 hover:text-yellow-400 transition-colors duration-300 flex items-center group"
                   >
-                    <span className="w-0 h-0.5 bg-gradient-to-r from-blue-600 to-cyan-500 group-hover:w-4 transition-all duration-300 mr-0 group-hover:mr-2"></span>
+                    <span className="w-0 h-0.5 bg-yellow-400 group-hover:w-4 transition-all duration-300 mr-0 group-hover:mr-2"></span>
                     {service}
                   </a>
                 </li>
@@ -103,8 +108,8 @@ const Footer = () => {
                 const Icon = info.icon;
                 return (
                   <li key={index} className="flex items-start space-x-3">
-                    <div className="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center flex-shrink-0">
-                      <Icon className="w-5 h-5 text-blue-400" />
+                    <div className="w-10 h-10 bg-zinc-900 border border-yellow-400/30 rounded-lg flex items-center justify-center flex-shrink-0">
+                      <Icon className="w-5 h-5 text-yellow-400" />
                     </div>
                     <span className="text-gray-400 pt-2">{info.text}</span>
                   </li>
@@ -114,23 +119,24 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="border-t border-gray-700 pt-8">
+        <div className="border-t border-yellow-400/20 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <div className="flex flex-wrap justify-center gap-6 text-sm text-gray-400">
-              <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
-              <a href="#" className="hover:text-white transition-colors">Terms of Service</a>
-              <a href="#" className="hover:text-white transition-colors">Sitemap</a>
+              <a href="#" className="hover:text-yellow-400 transition-colors">Privacy Policy</a>
+              <a href="#" className="hover:text-yellow-400 transition-colors">Terms of Service</a>
+              <a href="#" className="hover:text-yellow-400 transition-colors">Sitemap</a>
             </div>
             <div className="flex items-center space-x-1 text-sm text-gray-400">
-              <span>© {currentYear} TechForge - Complete IT Solution. All rights reserved.</span>
+              <span>© {currentYear} AppDost - Complete IT Solution. All rights reserved.</span>
             </div>
           </div>
           <div className="text-center mt-6">
             <p className="text-sm text-gray-500 flex items-center justify-center space-x-1">
               <span>Built with</span>
-              <Heart className="w-4 h-4 text-red-500 fill-current" />
-              <span>in USA</span>
+              <Heart className="w-4 h-4 text-yellow-400 fill-current" />
+              <span>in India</span>
             </p>
+            <p className="text-xs text-gray-600 mt-2">www.appdost.in</p>
           </div>
         </div>
       </div>

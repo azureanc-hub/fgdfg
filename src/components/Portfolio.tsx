@@ -60,14 +60,14 @@ const Portfolio = () => {
   ];
 
   return (
-    <section id="portfolio" className="py-24 bg-gradient-to-br from-slate-50 to-blue-50">
+    <section id="portfolio" className="py-24 bg-black">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-            Our Portfolio
+          <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
+            Our Featured Projects
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Showcase of our successful projects and satisfied clients
+          <p className="text-xl text-gray-400 max-w-3xl mx-auto">
+            Real solutions for real businesses - explore our successful projects
           </p>
         </div>
 
@@ -75,7 +75,7 @@ const Portfolio = () => {
           {projects.map((project, index) => (
             <div
               key={index}
-              className="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2"
+              className="group bg-zinc-900 border border-yellow-400/20 rounded-2xl overflow-hidden hover:border-yellow-400 hover:shadow-2xl hover:shadow-yellow-400/20 transition-all duration-300 hover:-translate-y-2"
             >
               <div className="relative h-48 overflow-hidden">
                 <img
@@ -83,30 +83,30 @@ const Portfolio = () => {
                   alt={project.title}
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
                 />
-                <div className={`absolute inset-0 bg-gradient-to-br ${project.gradient} opacity-0 group-hover:opacity-90 transition-opacity duration-300 flex items-center justify-center space-x-4`}>
-                  <button className="bg-white text-gray-800 p-3 rounded-full hover:scale-110 transition-transform">
+                <div className="absolute inset-0 bg-yellow-400/95 opacity-0 group-hover:opacity-90 transition-opacity duration-300 flex items-center justify-center space-x-4">
+                  <button className="bg-black text-yellow-400 p-3 rounded-full hover:scale-110 transition-transform">
                     <ExternalLink className="w-5 h-5" />
                   </button>
-                  <button className="bg-white text-gray-800 p-3 rounded-full hover:scale-110 transition-transform">
+                  <button className="bg-black text-yellow-400 p-3 rounded-full hover:scale-110 transition-transform">
                     <Github className="w-5 h-5" />
                   </button>
                 </div>
               </div>
               <div className="p-6">
-                <div className="text-sm text-blue-600 font-medium mb-2">
+                <div className="text-sm text-yellow-400 font-medium mb-2">
                   {project.category}
                 </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-2">
+                <h3 className="text-xl font-bold text-white mb-2">
                   {project.title}
                 </h3>
-                <p className="text-gray-600 text-sm mb-4 leading-relaxed">
+                <p className="text-gray-400 text-sm mb-4 leading-relaxed">
                   {project.description}
                 </p>
                 <div className="flex flex-wrap gap-2">
                   {project.tags.map((tag, idx) => (
                     <span
                       key={idx}
-                      className="text-xs bg-gray-100 text-gray-700 px-3 py-1 rounded-full"
+                      className="text-xs bg-yellow-400/10 text-yellow-400 border border-yellow-400/30 px-3 py-1 rounded-full"
                     >
                       {tag}
                     </span>
@@ -117,13 +117,13 @@ const Portfolio = () => {
           ))}
         </div>
 
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 bg-white rounded-2xl p-8 md:p-12 shadow-xl">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 bg-zinc-900 border border-yellow-400/30 rounded-2xl p-8 md:p-12">
           {stats.map((stat, index) => (
             <div key={index} className="text-center">
-              <div className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-blue-600 to-cyan-500 bg-clip-text text-transparent mb-2">
+              <div className="text-4xl md:text-5xl font-bold text-yellow-400 mb-2">
                 {stat.number}
               </div>
-              <div className="text-gray-600 text-sm md:text-base">
+              <div className="text-gray-400 text-sm md:text-base">
                 {stat.label}
               </div>
             </div>

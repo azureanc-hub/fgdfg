@@ -14,22 +14,22 @@ const Contact = () => {
     {
       icon: Mail,
       title: 'Email Us',
-      info: 'contact@techforge.com',
+      info: 'contact@appdost.in',
       detail: 'We will respond within 24 hours',
       gradient: 'from-blue-500 to-cyan-400',
     },
     {
       icon: Phone,
       title: 'Call Us',
-      info: '+1 (555) 123-4567',
+      info: '+91 76350 75422',
       detail: 'Mon-Fri: 9 AM - 6 PM',
       gradient: 'from-teal-500 to-emerald-400',
     },
     {
       icon: MapPin,
       title: 'Visit Us',
-      info: '123 Tech Street, Silicon Valley',
-      detail: 'San Francisco, CA 94105',
+      info: 'HQ: Patna, Bihar',
+      detail: 'Motihari, Banka',
       gradient: 'from-orange-500 to-amber-400',
     },
     {
@@ -43,29 +43,29 @@ const Contact = () => {
 
   const offices = [
     {
-      city: 'San Francisco',
+      city: 'Patna',
       region: 'Headquarters',
-      address: '123 Tech Street, CA 94105',
-      hours: 'Mon - Sat: 9:00 AM - 6:00 PM',
+      address: 'Patna, Bihar',
+      hours: 'Mon - Sat: 9:00 AM - 6:00 PM IST',
     },
     {
-      city: 'New York',
-      region: 'East Coast Office',
-      address: '456 Madison Ave, NY 10022',
-      hours: 'Mon - Sat: 9:00 AM - 6:00 PM',
+      city: 'Motihari',
+      region: 'Branch Office',
+      address: 'Motihari, Bihar',
+      hours: 'Mon - Sat: 9:00 AM - 6:00 PM IST',
     },
     {
-      city: 'London',
-      region: 'European Office',
-      address: '789 Oxford St, W1D 2HG',
-      hours: 'Mon - Fri: 8:00 AM - 5:00 PM',
+      city: 'Banka',
+      region: 'Branch Office',
+      address: 'Banka, Bihar',
+      hours: 'Mon - Sat: 9:00 AM - 6:00 PM IST',
     },
   ];
 
   const faqs = [
     {
-      question: 'What services does TechForge offer?',
-      answer: 'We offer comprehensive IT solutions including web & mobile development, UI/UX design, CRM software, cloud solutions, and cybersecurity services.',
+      question: 'What services does AppDost offer?',
+      answer: 'We offer comprehensive IT solutions including Android app development, web development, UI/UX design, CRM software, cloud solutions, and cybersecurity services.',
     },
     {
       question: 'What are your payment terms and pricing?',
@@ -87,18 +87,18 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="py-24 bg-gradient-to-br from-slate-50 to-blue-50">
+    <section id="contact" className="py-24 bg-zinc-950">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <div className="inline-flex items-center space-x-2 bg-white rounded-full px-4 py-2 shadow-md mb-4">
-            <Send className="w-4 h-4 text-blue-600" />
-            <span className="text-sm font-medium text-gray-700">Get In Touch</span>
+          <div className="inline-flex items-center space-x-2 bg-yellow-400/10 border border-yellow-400/30 rounded-full px-4 py-2 backdrop-blur-sm mb-4">
+            <Send className="w-4 h-4 text-yellow-400" />
+            <span className="text-sm font-medium text-yellow-400">Get In Touch</span>
           </div>
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-            Let's Start a Conversation
+          <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
+            Ready to Start Your Project?
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Have a project in mind? We'd love to hear from you. Let's bring your ideas to life together.
+          <p className="text-xl text-gray-400 max-w-3xl mx-auto">
+            Let's discuss how we can help transform your ideas into reality with cutting-edge technology and expert development.
           </p>
         </div>
 
@@ -108,32 +108,32 @@ const Contact = () => {
             return (
               <div
                 key={index}
-                className="bg-white rounded-2xl p-6 text-center hover:shadow-xl transition-all duration-300 hover:-translate-y-2"
+                className="bg-zinc-900 border border-yellow-400/20 rounded-2xl p-6 text-center hover:border-yellow-400 hover:shadow-xl hover:shadow-yellow-400/20 transition-all duration-300 hover:-translate-y-2"
               >
-                <div className={`w-14 h-14 bg-gradient-to-br ${method.gradient} rounded-xl flex items-center justify-center mx-auto mb-4`}>
-                  <Icon className="w-7 h-7 text-white" />
+                <div className="w-14 h-14 bg-yellow-400 rounded-xl flex items-center justify-center mx-auto mb-4">
+                  <Icon className="w-7 h-7 text-black" />
                 </div>
-                <h3 className="font-bold text-gray-900 mb-2">{method.title}</h3>
-                <p className="text-blue-600 font-medium mb-1">{method.info}</p>
-                <p className="text-sm text-gray-600">{method.detail}</p>
+                <h3 className="font-bold text-white mb-2">{method.title}</h3>
+                <p className="text-yellow-400 font-medium mb-1">{method.info}</p>
+                <p className="text-sm text-gray-400">{method.detail}</p>
               </div>
             );
           })}
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12 mb-16">
-          <div className="bg-white rounded-3xl p-8 md:p-12 shadow-xl">
-            <h3 className="text-3xl font-bold text-gray-900 mb-2">
+          <div className="bg-zinc-900 border border-yellow-400/30 rounded-3xl p-8 md:p-12">
+            <h3 className="text-3xl font-bold text-white mb-2">
               Send Us a Message
             </h3>
-            <p className="text-gray-600 mb-8">
+            <p className="text-gray-400 mb-8">
               Fill out the form and our team will get back to you within 24 hours.
             </p>
 
             <form onSubmit={handleSubmit} className="space-y-6">
               <div className="grid md:grid-cols-2 gap-6">
                 <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-2">
+                  <label className="block text-sm font-medium text-gray-300 mb-2">
                     Full Name *
                   </label>
                   <input
@@ -142,12 +142,12 @@ const Contact = () => {
                     value={formData.fullName}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-3 rounded-lg border-2 border-gray-200 focus:border-blue-500 focus:outline-none transition-colors"
+                    className="w-full px-4 py-3 rounded-lg bg-black border-2 border-yellow-400/30 text-white focus:border-yellow-400 focus:outline-none transition-colors placeholder:text-gray-600"
                     placeholder="John Doe"
                   />
                 </div>
                 <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-2">
+                  <label className="block text-sm font-medium text-gray-300 mb-2">
                     Email Address *
                   </label>
                   <input
@@ -156,7 +156,7 @@ const Contact = () => {
                     value={formData.email}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-3 rounded-lg border-2 border-gray-200 focus:border-blue-500 focus:outline-none transition-colors"
+                    className="w-full px-4 py-3 rounded-lg bg-black border-2 border-yellow-400/30 text-white focus:border-yellow-400 focus:outline-none transition-colors placeholder:text-gray-600"
                     placeholder="john@example.com"
                   />
                 </div>
@@ -164,7 +164,7 @@ const Contact = () => {
 
               <div className="grid md:grid-cols-2 gap-6">
                 <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-2">
+                  <label className="block text-sm font-medium text-gray-300 mb-2">
                     Phone Number *
                   </label>
                   <input
@@ -173,12 +173,12 @@ const Contact = () => {
                     value={formData.phone}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-3 rounded-lg border-2 border-gray-200 focus:border-blue-500 focus:outline-none transition-colors"
+                    className="w-full px-4 py-3 rounded-lg bg-black border-2 border-yellow-400/30 text-white focus:border-yellow-400 focus:outline-none transition-colors placeholder:text-gray-600"
                     placeholder="+1 234 567 890"
                   />
                 </div>
                 <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-2">
+                  <label className="block text-sm font-medium text-gray-300 mb-2">
                     Subject *
                   </label>
                   <select
@@ -186,7 +186,7 @@ const Contact = () => {
                     value={formData.subject}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-3 rounded-lg border-2 border-gray-200 focus:border-blue-500 focus:outline-none transition-colors"
+                    className="w-full px-4 py-3 rounded-lg bg-black border-2 border-yellow-400/30 text-white focus:border-yellow-400 focus:outline-none transition-colors placeholder:text-gray-600"
                   >
                     <option value="">Select a subject</option>
                     <option value="project">New Project</option>
@@ -214,7 +214,7 @@ const Contact = () => {
 
               <button
                 type="submit"
-                className="w-full bg-gradient-to-r from-blue-600 to-cyan-500 text-white py-4 rounded-lg font-medium hover:shadow-xl transition-all duration-300 hover:scale-105 flex items-center justify-center space-x-2"
+                className="w-full bg-yellow-400 text-black py-4 rounded-lg font-medium hover:shadow-xl hover:shadow-yellow-400/50 transition-all duration-300 hover:scale-105 flex items-center justify-center space-x-2"
               >
                 <span>Send Message</span>
                 <Send className="w-5 h-5" />
@@ -223,66 +223,67 @@ const Contact = () => {
           </div>
 
           <div className="space-y-8">
-            <div className="bg-white rounded-3xl p-8 md:p-12 shadow-xl">
-              <h3 className="text-2xl font-bold text-gray-900 mb-6">Our Offices</h3>
+            <div className="bg-zinc-900 border border-yellow-400/30 rounded-3xl p-8 md:p-12">
+              <h3 className="text-2xl font-bold text-white mb-6">Our Offices</h3>
               <div className="space-y-6">
                 {offices.map((office, index) => (
-                  <div key={index} className="border-l-4 border-blue-500 pl-4">
-                    <h4 className="font-bold text-gray-900 text-lg">{office.city}</h4>
-                    <p className="text-sm text-blue-600 mb-2">{office.region}</p>
-                    <p className="text-gray-600 text-sm mb-1">{office.address}</p>
+                  <div key={index} className="border-l-4 border-yellow-400 pl-4">
+                    <h4 className="font-bold text-white text-lg">{office.city}</h4>
+                    <p className="text-sm text-yellow-400 mb-2">{office.region}</p>
+                    <p className="text-gray-400 text-sm mb-1">{office.address}</p>
                     <p className="text-gray-500 text-sm">{office.hours}</p>
                   </div>
                 ))}
               </div>
             </div>
 
-            <div className="bg-gradient-to-br from-blue-600 to-cyan-500 rounded-3xl p-8 text-white">
-              <h3 className="text-2xl font-bold mb-4">Multiple Locations in Bihar</h3>
-              <p className="text-blue-100 mb-6">
-                We have offices across Bihar to serve you better. Visit our nearest location or reach out online.
+            <div className="bg-yellow-400 rounded-3xl p-8">
+              <h3 className="text-2xl font-bold mb-4 text-black">3 Offices Across Bihar</h3>
+              <p className="text-black/80 mb-6">
+                HQ-Patna, Motihari, Banka. Visit our nearest location or reach out online.
               </p>
-              <button className="bg-white text-blue-600 px-6 py-3 rounded-lg font-medium hover:shadow-xl transition-all duration-300 hover:scale-105">
-                View All Locations
-              </button>
+              <div className="flex flex-wrap gap-4">
+                <span className="text-sm font-medium text-black">📧 contact@appdost.in</span>
+                <span className="text-sm font-medium text-black">📞 +91 76350 75422</span>
+              </div>
             </div>
           </div>
         </div>
 
-        <div className="bg-white rounded-3xl p-8 md:p-12 shadow-xl">
-          <h3 className="text-3xl font-bold text-gray-900 mb-8 text-center">
+        <div className="bg-zinc-900 border border-yellow-400/30 rounded-3xl p-8 md:p-12">
+          <h3 className="text-3xl font-bold text-white mb-8 text-center">
             Frequently Asked Questions
           </h3>
-          <p className="text-gray-600 text-center mb-10">
+          <p className="text-gray-400 text-center mb-10">
             Get answers to common questions about our services
           </p>
           <div className="grid md:grid-cols-3 gap-8">
             {faqs.map((faq, index) => (
-              <div key={index} className="border-l-4 border-blue-500 pl-6">
-                <h4 className="font-bold text-gray-900 mb-3">{faq.question}</h4>
-                <p className="text-gray-600 text-sm leading-relaxed">{faq.answer}</p>
+              <div key={index} className="border-l-4 border-yellow-400 pl-6">
+                <h4 className="font-bold text-white mb-3">{faq.question}</h4>
+                <p className="text-gray-400 text-sm leading-relaxed">{faq.answer}</p>
               </div>
             ))}
           </div>
         </div>
 
         <div className="mt-16 text-center">
-          <h3 className="text-2xl font-bold text-gray-900 mb-4">Connect With Us</h3>
-          <p className="text-gray-600 mb-6">Follow us on social media for updates and insights</p>
+          <h3 className="text-2xl font-bold text-white mb-4">Connect With Us</h3>
+          <p className="text-gray-400 mb-6">Follow us on social media for updates and insights</p>
           <div className="flex justify-center space-x-4">
             {[
-              { icon: Linkedin, gradient: 'from-blue-600 to-blue-700' },
-              { icon: Twitter, gradient: 'from-sky-500 to-blue-500' },
-              { icon: Instagram, gradient: 'from-pink-500 to-rose-500' },
-              { icon: Facebook, gradient: 'from-blue-600 to-indigo-600' },
+              { icon: Linkedin },
+              { icon: Twitter },
+              { icon: Instagram },
+              { icon: Facebook },
             ].map((social, index) => {
               const Icon = social.icon;
               return (
                 <button
                   key={index}
-                  className={`w-12 h-12 bg-gradient-to-br ${social.gradient} rounded-full flex items-center justify-center hover:scale-110 transition-transform duration-300`}
+                  className="w-12 h-12 bg-yellow-400 rounded-full flex items-center justify-center hover:scale-110 hover:shadow-lg hover:shadow-yellow-400/50 transition-all duration-300"
                 >
-                  <Icon className="w-5 h-5 text-white" />
+                  <Icon className="w-5 h-5 text-black" />
                 </button>
               );
             })}
