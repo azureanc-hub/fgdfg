@@ -29,8 +29,10 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="bg-black border-t border-yellow-400/20 text-white pt-16 pb-8">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <footer className="bg-black border-t-2 border-yellow-400/30 text-white pt-16 pb-8 relative overflow-hidden">
+      <div className="absolute top-0 left-0 w-96 h-96 bg-yellow-400/5 rounded-full blur-3xl"></div>
+      <div className="absolute bottom-0 right-0 w-80 h-80 bg-yellow-500/5 rounded-full blur-3xl"></div>
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
           <div>
             <Link to="/" className="flex items-center space-x-2 mb-6">
@@ -69,7 +71,7 @@ const Footer = () => {
           </div>
 
           <div>
-            <h4 className="text-lg font-bold mb-6">Quick Links</h4>
+            <h4 className="text-lg font-bold mb-6 text-white border-b-2 border-yellow-400 pb-2 inline-block">Quick Links</h4>
             <ul className="space-y-3">
               {quickLinks.map((link, index) => (
                 <li key={index}>
@@ -86,7 +88,7 @@ const Footer = () => {
           </div>
 
           <div>
-            <h4 className="text-lg font-bold mb-6">Our Services</h4>
+            <h4 className="text-lg font-bold mb-6 text-white border-b-2 border-yellow-400 pb-2 inline-block">Our Services</h4>
             <ul className="space-y-3">
               {services.map((service, index) => (
                 <li key={index}>
@@ -103,7 +105,7 @@ const Footer = () => {
           </div>
 
           <div>
-            <h4 className="text-lg font-bold mb-6">Contact Info</h4>
+            <h4 className="text-lg font-bold mb-6 text-white border-b-2 border-yellow-400 pb-2 inline-block">Contact Info</h4>
             <ul className="space-y-4">
               {contactInfo.map((info, index) => {
                 const Icon = info.icon;

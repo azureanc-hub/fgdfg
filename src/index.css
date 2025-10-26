@@ -19,9 +19,17 @@
 @layer utilities {
   .bg-grid-pattern {
     background-image:
-      linear-gradient(to right, rgba(234, 179, 8, 0.05) 1px, transparent 1px),
-      linear-gradient(to bottom, rgba(234, 179, 8, 0.05) 1px, transparent 1px);
+      linear-gradient(to right, rgba(234, 179, 8, 0.08) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(234, 179, 8, 0.08) 1px, transparent 1px);
     background-size: 40px 40px;
+  }
+
+  .text-glow-yellow {
+    text-shadow: 0 0 20px rgba(234, 179, 8, 0.5);
+  }
+
+  .box-glow-yellow {
+    box-shadow: 0 0 30px rgba(234, 179, 8, 0.15);
   }
 
   @keyframes float {

@@ -35,16 +35,20 @@ const Blog = () => {
   ];
 
   return (
-    <section id="blog" className="py-24 bg-zinc-950">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="blog" className="py-24 bg-zinc-950 relative overflow-hidden">
+      <div className="absolute top-0 left-0 w-72 h-72 bg-yellow-400/5 rounded-full blur-3xl"></div>
+      <div className="absolute bottom-0 right-0 w-96 h-96 bg-yellow-500/5 rounded-full blur-3xl"></div>
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center mb-16">
-          <div className="inline-flex items-center space-x-2 bg-yellow-400/10 border border-yellow-400/30 px-4 py-2 rounded-full text-sm font-medium mb-4 backdrop-blur-sm">
+          <div className="inline-flex items-center space-x-2 bg-yellow-400/15 border-2 border-yellow-400/40 px-4 py-2 rounded-full text-sm font-medium mb-6 backdrop-blur-sm">
             <BookOpen className="w-4 h-4 text-yellow-400" />
-            <span className="text-yellow-400">Latest Updates</span>
+            <span className="text-yellow-400 font-semibold">Latest Updates</span>
           </div>
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
-            Insights & Tech Articles
+          <h2 className="text-4xl md:text-5xl font-bold mb-4">
+            <span className="text-white">Insights & </span>
+            <span className="text-yellow-400">Tech Articles</span>
           </h2>
+          <div className="w-24 h-1 bg-yellow-400 mx-auto mb-4"></div>
           <p className="text-xl text-gray-400 max-w-3xl mx-auto">
             Stay informed with our latest insights, tech trends, and industry expertise
           </p>

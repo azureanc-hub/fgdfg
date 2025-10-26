@@ -60,12 +60,17 @@ const Portfolio = () => {
   ];
 
   return (
-    <section id="portfolio" className="py-24 bg-black">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="portfolio" className="py-24 bg-black relative overflow-hidden">
+      <div className="absolute inset-0 bg-grid-pattern opacity-10"></div>
+      <div className="absolute top-20 left-20 w-64 h-64 bg-yellow-400/10 rounded-full blur-3xl"></div>
+      <div className="absolute bottom-20 right-20 w-80 h-80 bg-yellow-500/10 rounded-full blur-3xl"></div>
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
-            Our Featured Projects
+          <h2 className="text-4xl md:text-5xl font-bold mb-4">
+            <span className="text-white">Our Featured </span>
+            <span className="text-yellow-400">Projects</span>
           </h2>
+          <div className="w-24 h-1 bg-yellow-400 mx-auto mb-4"></div>
           <p className="text-xl text-gray-400 max-w-3xl mx-auto">
             Real solutions for real businesses - explore our successful projects
           </p>
@@ -117,13 +122,13 @@ const Portfolio = () => {
           ))}
         </div>
 
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 bg-zinc-900 border border-yellow-400/30 rounded-2xl p-8 md:p-12">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 bg-zinc-900 border-2 border-yellow-400/40 rounded-2xl p-8 md:p-12 box-glow-yellow">
           {stats.map((stat, index) => (
-            <div key={index} className="text-center">
-              <div className="text-4xl md:text-5xl font-bold text-yellow-400 mb-2">
+            <div key={index} className="text-center group hover:scale-110 transition-transform duration-300">
+              <div className="text-4xl md:text-5xl font-bold text-yellow-400 mb-2 group-hover:text-glow-yellow">
                 {stat.number}
               </div>
-              <div className="text-gray-400 text-sm md:text-base">
+              <div className="text-gray-400 text-sm md:text-base group-hover:text-yellow-400 transition-colors">
                 {stat.label}
               </div>
             </div>

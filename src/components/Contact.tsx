@@ -87,16 +87,21 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="py-24 bg-zinc-950">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="contact" className="py-24 bg-zinc-950 relative overflow-hidden">
+      <div className="absolute inset-0 bg-grid-pattern opacity-10"></div>
+      <div className="absolute top-10 right-10 w-80 h-80 bg-yellow-400/10 rounded-full blur-3xl"></div>
+      <div className="absolute bottom-10 left-10 w-72 h-72 bg-yellow-500/10 rounded-full blur-3xl"></div>
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center mb-16">
-          <div className="inline-flex items-center space-x-2 bg-yellow-400/10 border border-yellow-400/30 rounded-full px-4 py-2 backdrop-blur-sm mb-4">
+          <div className="inline-flex items-center space-x-2 bg-yellow-400/15 border-2 border-yellow-400/40 rounded-full px-4 py-2 backdrop-blur-sm mb-6">
             <Send className="w-4 h-4 text-yellow-400" />
-            <span className="text-sm font-medium text-yellow-400">Get In Touch</span>
+            <span className="text-sm font-medium text-yellow-400 font-semibold">Get In Touch</span>
           </div>
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
-            Ready to Start Your Project?
+          <h2 className="text-4xl md:text-5xl font-bold mb-4">
+            <span className="text-white">Ready to Start Your </span>
+            <span className="text-yellow-400">Project?</span>
           </h2>
+          <div className="w-24 h-1 bg-yellow-400 mx-auto mb-4"></div>
           <p className="text-xl text-gray-400 max-w-3xl mx-auto">
             Let's discuss how we can help transform your ideas into reality with cutting-edge technology and expert development.
           </p>
@@ -198,7 +203,7 @@ const Contact = () => {
               </div>
 
               <div>
-                <label className="block text-sm font-medium text-gray-700 mb-2">
+                <label className="block text-sm font-medium text-gray-300 mb-2">
                   Your Message *
                 </label>
                 <textarea
@@ -207,7 +212,7 @@ const Contact = () => {
                   onChange={handleChange}
                   required
                   rows={5}
-                  className="w-full px-4 py-3 rounded-lg border-2 border-gray-200 focus:border-blue-500 focus:outline-none transition-colors resize-none"
+                  className="w-full px-4 py-3 rounded-lg bg-black border-2 border-yellow-400/30 text-white focus:border-yellow-400 focus:outline-none transition-colors resize-none placeholder:text-gray-600"
                   placeholder="Tell us about your project or inquiry..."
                 ></textarea>
               </div>

@@ -60,14 +60,19 @@ const Careers = () => {
   };
 
   return (
-    <section id="careers" className="py-24 bg-black">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="careers" className="py-24 bg-black relative overflow-hidden">
+      <div className="absolute inset-0 bg-grid-pattern opacity-10"></div>
+      <div className="absolute top-20 left-20 w-72 h-72 bg-yellow-400/10 rounded-full blur-3xl"></div>
+      <div className="absolute bottom-20 right-20 w-80 h-80 bg-yellow-500/10 rounded-full blur-3xl"></div>
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
-            Join Our Team
+          <h2 className="text-4xl md:text-5xl font-bold mb-4">
+            <span className="text-white">Join Our </span>
+            <span className="text-yellow-400">Team</span>
           </h2>
+          <div className="w-24 h-1 bg-yellow-400 mx-auto mb-4"></div>
           <p className="text-xl text-gray-400 max-w-3xl mx-auto">
-            Be part of our journey. Work on exciting projects and shape the future of IT with AppDost.
+            Be part of our journey. Work on exciting projects and shape the future of IT with Soul.
           </p>
         </div>
 
@@ -186,7 +191,7 @@ const Careers = () => {
               </div>
 
               <div>
-                <label className="block text-sm font-medium text-gray-700 mb-2">
+                <label className="block text-sm font-medium text-gray-300 mb-2">
                   Position *
                 </label>
                 <input
@@ -195,13 +200,13 @@ const Careers = () => {
                   value={formData.position}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-3 rounded-lg border-2 border-gray-200 focus:border-blue-500 focus:outline-none transition-colors"
+                  className="w-full px-4 py-3 rounded-lg bg-black border-2 border-yellow-400/30 text-white focus:border-yellow-400 focus:outline-none transition-colors placeholder:text-gray-600"
                   placeholder="e.g., Full Stack Developer"
                 />
               </div>
 
               <div>
-                <label className="block text-sm font-medium text-gray-700 mb-2">
+                <label className="block text-sm font-medium text-gray-300 mb-2">
                   Why are you a great fit? *
                 </label>
                 <textarea
@@ -210,7 +215,7 @@ const Careers = () => {
                   onChange={handleChange}
                   required
                   rows={4}
-                  className="w-full px-4 py-3 rounded-lg border-2 border-gray-200 focus:border-blue-500 focus:outline-none transition-colors resize-none"
+                  className="w-full px-4 py-3 rounded-lg bg-black border-2 border-yellow-400/30 text-white focus:border-yellow-400 focus:outline-none transition-colors resize-none placeholder:text-gray-600"
                   placeholder="Tell us about your skills and what makes you a perfect fit..."
                 ></textarea>
               </div>

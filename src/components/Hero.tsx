@@ -4,9 +4,11 @@ import { Link } from 'react-router-dom';
 const Hero = () => {
   return (
     <section id="home" className="relative min-h-screen flex items-center overflow-hidden bg-black">
-      <div className="absolute inset-0 bg-grid-pattern opacity-5">
-        <div className="absolute inset-0 bg-gradient-to-br from-yellow-500/10 via-transparent to-yellow-400/10"></div>
+      <div className="absolute inset-0 bg-grid-pattern opacity-20">
+        <div className="absolute inset-0 bg-gradient-to-br from-yellow-500/20 via-transparent to-yellow-400/20"></div>
       </div>
+      <div className="absolute top-20 left-10 w-72 h-72 bg-yellow-400/10 rounded-full blur-3xl"></div>
+      <div className="absolute bottom-20 right-10 w-96 h-96 bg-yellow-500/10 rounded-full blur-3xl"></div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32 relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
@@ -20,11 +22,11 @@ const Hero = () => {
 
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight">
               <span className="text-white">Transform Your</span>{' '}
-              <span className="text-yellow-400">
+              <span className="text-yellow-400 text-glow-yellow">
                 Ideas
               </span>{' '}
               <span className="text-white">Into Digital</span>{' '}
-              <span className="text-yellow-400">
+              <span className="text-yellow-400 text-glow-yellow">
                 Reality
               </span>
             </h1>
