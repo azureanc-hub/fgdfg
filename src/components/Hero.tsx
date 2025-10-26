@@ -1,4 +1,5 @@
 import { ArrowRight, CheckCircle2, Shield, Clock, Laptop, Smartphone, Zap } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const Hero = () => {
   return (
@@ -34,13 +35,13 @@ const Hero = () => {
             </p>
 
             <div className="flex flex-wrap gap-4">
-              <button className="group bg-yellow-400 text-black px-8 py-4 rounded-lg font-medium hover:shadow-xl hover:shadow-yellow-400/50 transition-all duration-300 flex items-center space-x-2 hover:scale-105">
+              <Link to="/services" className="group bg-yellow-400 text-black px-8 py-4 rounded-lg font-medium hover:shadow-xl hover:shadow-yellow-400/50 transition-all duration-300 flex items-center space-x-2 hover:scale-105">
                 <span>Explore Our Services</span>
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-              </button>
-              <button className="bg-transparent text-yellow-400 px-8 py-4 rounded-lg font-medium hover:shadow-xl hover:shadow-yellow-400/30 transition-all duration-300 border-2 border-yellow-400 hover:bg-yellow-400 hover:text-black">
+              </Link>
+              <Link to="/contact" className="bg-transparent text-yellow-400 px-8 py-4 rounded-lg font-medium hover:shadow-xl hover:shadow-yellow-400/30 transition-all duration-300 border-2 border-yellow-400 hover:bg-yellow-400 hover:text-black">
                 Get Free Consultation
-              </button>
+              </Link>
             </div>
 
             <div className="flex flex-wrap gap-8 pt-4">
